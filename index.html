@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-912D4ZR2HV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-912D4ZR2HV');
+</script>
+
+<!-- Robust Anti-Reload (Blocking Live Server) -->
+<script>
+(function() {
+    const block = (m) => console.log("Blocking reload attempt: " + m);
+    try {
+        // Simple override
+        window.location.reload = function() { block("location.reload"); };
+        window.history.go = function() { block("history.go"); };
+        window.location.replace = function() { block("location.replace"); };
+        
+        // Prevent meta refresh
+        const preventRefresh = () => {
+            const refresh = document.querySelector('meta[http-equiv="refresh"]');
+            if (refresh) {
+                console.log("Blocking meta refresh");
+                refresh.remove();
+            }
+        };
+        setInterval(preventRefresh, 1000);
+
+        // Block beforeunload popup if it exists
+        window.addEventListener('beforeunload', (event) => {
+            event.stopImmediatePropagation();
+        }, true);
+
+    } catch(e) { console.error("Reload fix error:", e); }
+})();
+</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#382C2A" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <title>Bad Ice Cream - Play Online for Free</title>
+    <meta name="description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!"> 
+    <meta name="author" content="HSINI">
+    <link rel="icon" href="/favicon.ico">
+    <script src="poki.js"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
+    <script type="text/javascript" src="./js/virtualJoystickSkinMod.js"></script>
+    <script type="text/javascript" src="./preloader/nitromePreloader.js"></script>
+    <script src="/js/main.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      canvas {
+        outline: none;
+      }
+
+      html,
+      body,
+      #container {
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: #9badbe;
+      }
+
+      #splash {
+        position: absolute;
+        visibility: hidden;
+        z-index: 10;
+      }
+
+      #splash__image {
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("assets/badicecream_splash.jpg");
+        visibility: visible;
+        transition: opacity 0.5s;
+        z-index: 10;
+      }
+
+      #progress__root {
+        position: absolute;
+      }
+
+      #progress__line {
+        width: 0;
+        height: 100%;
+        transition: all 0.5s;
+      }
+    </style>
+  
+    <meta property="og:title" content="Bad Ice Cream - Play Online for Free">
+    <meta property="og:description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/bad-ice-cream-unblocked/">
+    <meta property="og:image" content="https://unlockedgames.io/icons/bad-ice-cream.webp">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Bad Ice Cream",
+  "description": "Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!",
+  "url": "https://unlockedgames.io/bad-ice-cream-unblocked/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "image": "https://unlockedgames.io/icons/bad-ice-cream.webp",
+  "thumbnailUrl": "https://unlockedgames.io/icons/bad-ice-cream.webp"
+}</script>
+
+    <meta property="og:title" content="Bad Ice Cream - Play Online for Free">
+    <meta property="og:description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/bad-ice-cream-unblocked/">
+    <meta property="og:image" content="https://unlockedgames.io/icons/bad-ice-cream.webp">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Bad Ice Cream",
+  "description": "Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!",
+  "url": "https://unlockedgames.io/bad-ice-cream-unblocked/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "image": "https://unlockedgames.io/icons/bad-ice-cream.webp",
+  "thumbnailUrl": "https://unlockedgames.io/icons/bad-ice-cream.webp"
+}</script>
+
+    <meta property="og:title" content="Bad Ice Cream - Play Online for Free">
+    <meta property="og:description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/bad-ice-cream-unblocked/">
+    <meta property="og:image" content="https://unlockedgames.io/icons/bad-ice-cream.webp">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Bad Ice Cream",
+  "description": "Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!",
+  "url": "https://unlockedgames.io/bad-ice-cream-unblocked/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "image": "https://unlockedgames.io/icons/bad-ice-cream.webp",
+  "thumbnailUrl": "https://unlockedgames.io/icons/bad-ice-cream.webp"
+}</script>
+
+    <meta property="og:title" content="Bad Ice Cream - Play Online for Free">
+    <meta property="og:description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/bad-ice-cream-unblocked/">
+    <meta property="og:image" content="https://unlockedgames.io/icons/bad-ice-cream.webp">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Bad Ice Cream",
+  "description": "Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!",
+  "url": "https://unlockedgames.io/bad-ice-cream-unblocked/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "HSINI"
+  },
+  "image": "https://unlockedgames.io/icons/bad-ice-cream.webp",
+  "thumbnailUrl": "https://unlockedgames.io/icons/bad-ice-cream.webp"
+}</script>
+
+    <meta property="og:title" content="Bad Ice Cream - Play Online for Free">
+    <meta property="og:description" content="Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/bad-ice-cream-unblocked/">
+    <meta property="og:image" content="https://unlockedgames.io/icons/bad-ice-cream.webp">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Bad Ice Cream",
+  "description": "Play Bad Ice Cream online for free. Unblocked and available on all devices. Experience the best Bad Ice Cream gameplay now!",
+  "url": "https://unlockedgames.io/bad-ice-cream-unblocked/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "HSINI"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsinidev"
+  },
+  "image": "https://unlockedgames.io/icons/bad-ice-cream.webp",
+  "thumbnailUrl": "https://unlockedgames.io/icons/bad-ice-cream.webp"
+}</script>
+</head>
+
+  <body>
+    <div id="splash__image">
+      <div id="progress__root">
+        <div id="progress__line"></div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        PokiSDK.setDebugTouchOverlayController(true);
+
+        PokiSDK.init()
+          .then(() => {
+            // successfully initialized
+            onPokiInitComplete(false);
+          })
+          .catch(() => {
+            // successfully initialized but the user has adblock
+            onPokiInitComplete(true);
+          });
+        let config;
+
+        config = {
+          key: "bic1",
+          title: "BadIceCream 1",
+          filename: "BadIceCream1_sdk",
+          pokiSDK: true,
+          debugPoki: false,
+          showFPS: false,
+          debug: false,
+          splash: "assets/badicecream_splash.jpg",
+          start: null,
+          width: 550,
+          height: 550,
+          x: 0,
+          y: 0,
+          w: "100%",
+          h: "100%",
+          stageScaleMode: null,
+          stageAlign: null,
+          progressParserWeigth: 1,
+          progress: {
+            direction: "lr",
+            back: "#35809e",
+            line: "#070bff",
+            rect: [0.25, 0.65, 0.5, 0.03],
+          },
+          box2dVersion: "none",
+          skipFramesOfScene: null,
+          buttonPokiSDKActions: null,
+          retryButtonIDS: null,
+          retryButtonAction: null,
+          actionOnStop: null,
+          actionWhenRetryButtonEncountered: null,
+          binary: [
+            {
+              name: "BadIceCream1_sdk",
+              path: "assets/BadIceCream1_sdk.swf",
+              size: 1937690,
+              resourceType: "GAME",
+            },
+          ],
+          runtime: "js/BadIceCream.js",
+        };
+
+        PokiSDK.setDebug(config.debugPoki);
+
+        Loader.init(config);
+
+        let onPokiInitComplete = (adBlocked) => {
+          PokiSDK.adBlocked = adBlocked;
+          PokiSDK.gameLoadingStart();
+
+          Loader.runGame(
+            (fill) => {
+              PokiSDK.gameLoadingProgress({
+                percentageDone: fill,
+                kbLoaded: 0,
+                kbTotal: 0,
+                fileNameLoaded: "",
+                filesLoaded: 0,
+                filesTotal: 0,
+              });
+              window.nitromePreloaderSetProgress(fill / 1.0);
+            },
+            (instance) => {
+              PokiSDK.gameLoadingFinished();
+              window.nitromePreloaderSetComplete();
+            }
+          );
+        };
+        window.nitromePreloaderInit("bad-ice-cream");
+      });
+    </script>
+  
+<!-- SEO CONTENT (Hidden) -->
+<div class="seo-generated-content" style="display:none; visibility:hidden;">
+<h2>Bad Ice Cream</h2>
+
+<h3>Game Overview</h3>
+<h4>You play as an ice cream vendor on a deserted island.</h4>
+You start with a limited amount of money, resources, and customers. Your goal is to make the most money by selling different types of ice cream while navigating through various challenges.
+
+<h3>How to Play</h3>
+<h4>Controls:</h4>
+- Use W and A keys to move your cart.
+- Shift key to hover over items in inventory.
+- Click on an item to buy it.
+
+<h4>Objective:</h4>
+Your objective is to sell as much ice cream as possible while managing your resources, customer demand, and the weather.
+
+<h3>Tips and Tricks for Success</h3>
+<h4>Tip 1: Plan Your Menu</h4>
+- Start with basic flavors like vanilla and chocolate.
+- Add unique items like rocky road and cookie dough to increase sales.
+
+<h4>Tip 2: Manage Your Inventory</h4>
+- Keep enough stock of the most popular ice cream flavors.
+- Rotate inventory regularly to avoid running out of demand.
+
+<h4>Tip 3: Adapt to Weather Conditions</h4>
+- Be cautious during rainy or hot weather, as it affects customer demand and your profit.
+
+<h4>Tip 4: Build Relationships with Customers</h4>
+- Engage with customers by responding to their inquiries and building trust.
+
+<h3>Why You Should Play It</h3>
+<h4>Unique Gameplay Experience:</h4>
+-Bad Ice Cream offers a refreshing gameplay experience, combining elements of simulation and strategy.
+- Explore the island, manage resources, and make decisions that impact your business.
+
+<h4>Predictable yet Challenging Economy:</h4>
+-The game's economy is predictable, but unpredictable weather conditions make it challenging to predict customer demand.
+
+<h4>High Replay Value:</h4>
+-High replay value comes from the variety of ice cream flavors, customer preferences, and weather patterns.
+
+<h3>Likes About Bad Ice Cream</h3>
+<h4>-Easy to Learn, Hard to Master:</h4>
+-The game is easy to learn, but mastering strategies takes time and practice.
+
+<h4>-Addictive yet Relaxing:</h4>
+-Bad Ice Cream is both addictive and relaxing, making it perfect for playing in short intervals.
+</div>
+<script>
+    // Silently block specific Live Server reload triggers if possible
+    
+</script>
+</body>
+</html>
